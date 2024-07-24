@@ -1,6 +1,6 @@
 export default function Hero() {
 	return (
-		<div className="bg-[#e0d9cf] m-8 shadow-lg rounded-md px-7 pt-5 pb-8">
+		<div className="hidden sm:block bg-[#e0d9cf] my-8 shadow-lg rounded-md px-7 pt-5 pb-8">
 			<div className="w-full h-[500px]">
 				<img src="./hero-img.jpg" className="w-full h-full object-cover rounded-lg" alt="" />
 			</div>

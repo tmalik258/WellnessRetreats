@@ -1,12 +1,12 @@
 import Hero from "../components/Hero";
+import Retreats from "../components/Retreats";
 
 function Home() {
 	return (
-		<>
-			<div className="hidden sm:block">
-				<Hero />
-			</div>
-		</>
+		<div className="px-8">
+			<Hero />
+			<Retreats />
+		</div>
 	);
 }
 
