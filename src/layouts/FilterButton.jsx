@@ -1,11 +1,18 @@
-export default function FilterButton() {
+import PropTypes from "prop-types";
+
+export default function FilterButton({ placeholder, filterStateFunc, options }) {
 	return (
 		<>
-			<select name="" id="" className="bg-[#efefef] max-sm:border sm:bg-[#1b3252] sm:text-white rounded sm:rounded-md p-3 w-full outline-none">
-				<option value="">Filter by Date</option>
-				<option value="2324">2023-2024</option>
-				<option value="">2024-2024</option>
+			<select className="bg-[#efefef] max-sm:border sm:bg-[#1b3252] sm:text-white rounded sm:rounded-md p-2 w-full outline-none" onChange={e => filterStateFunc(e.target.value)}>
+				<option value="">{placeholder}</option>
+				{options.map((value, index) => <option key={index} value={value.toLowerCase()}>{value}</option>)}
 			</select>
 		</>
 	);
 }
+
+FilterButton.propTypes = {
+	placeholder: PropTypes.string.isRequired,
+	filterStateFunc: PropTypes.func.isRequired,
+	options: PropTypes.array.isRequired
+};
