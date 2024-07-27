@@ -1,4 +1,4 @@
-# Vite React Project
+# Wellness Retreats Project
 
 ## Overview
 
@@ -89,4 +89,3 @@ For any questions, please contact [Talha Malik](mailto:talhamalik25.tm@gmail.com
 ---
 
 Happy coding!
-```
